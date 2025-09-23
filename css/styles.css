@@ -1,0 +1,122 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color:rgb(78, 78, 78);
+    margin:0px;
+    padding:0px;
+    background-color: rgb(240, 240, 240);
+}
+.wrapper{
+    width:80%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #CCF0FB ;
+    display:grid;
+    grid-template-areas:
+    'header header header header'
+    'content content content content'
+    'footer footer footer footer' ;
+    
+   
+    
+   
+
+}
+.banner{
+    width:100%;
+    margin:0px;
+    padding:0px;
+}
+#hours{
+    line-height: 2em;
+}
+.contactimg{
+    width:20%;
+}
+header{
+grid-area: header;
+}
+
+main{
+grid-area: content;
+padding:10px;
+ 
+}
+footer{
+grid-area: footer;
+text-align: center;
+background-color: bisque;
+font-size: .50em;
+}
+
+.images{
+    text-align: center;
+}
+
+
+h1{
+    color:rgb(78, 78, 78);
+    font-size: 2em;
+    text-align: center;
+}
+h2{
+    font-size: 1.75em;
+}
+
+
+#ffhimg{
+    width:80%;
+    margin:10px;
+}
+#bio{
+    
+    float:left;
+    padding-left:30px;
+    text-align: center;
+}
+#logoimgs{
+    width: 30%;
+   float:left;
+}
+a:visited{
+    color:#BE9E8A;
+    text-decoration: none;
+}
+a{
+    color:#646403;
+    text-decoration: none;
+}
+a:hover{
+    color:#0192CD;
+
+}
+nav li{
+    list-style-type: none;
+    text-align: left;
+    line-height: 2em;
+}
+nav ul{
+    padding:10px;
+}
+
+ol{
+    line-height: 2em;
+    font-size: 1.25em;
+}
+li{
+    list-style-type: none;
+}
+#movies{
+    line-height: 2em;
+    font-size: 1.25em;
+}
+#moviesection{
+    width:65%;
+    float:left;
+    padding-left:30px;
+    text-align: center;
+    margin-top:50px;
+
+}
+
