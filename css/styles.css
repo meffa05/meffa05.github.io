@@ -23,6 +23,25 @@ body{
    
 
 }
+#SecretKey{
+    clear: both;
+    text-align: center;
+    font-size: 1.5em;
+    margin:0px;
+    padding:10px;
+    font-weight: bold;
+}
+
+button{
+    font-size: .75em;
+    margin:10px;
+    padding:5px;
+    background-color: #70c6e2ff;
+    border: 2px, solid #008ac1;
+    border-radius: 5px;
+    color: rgb(78, 78, 78);
+    
+}
 
 #Welcome{
     

@@ -24,3 +24,24 @@ else if (isEvening == true) {//if its evening
     div.style.color ='#0092CB';
 }
 
+//local storage assignment
+
+//add message to local storage
+const Output = document.querySelector('#Message')
+const key = 'It\'s a secret to everybody. '
+
+ localStorage.setItem(key, 'It\s a great day to have a great day!');
+
+
+const button = document.querySelector('button')
+
+
+button.addEventListener('click', () => {
+    const storedValue = localStorage.getItem(key)
+    Output.textContent = storedValue;
+    })
+
+    
+
+
+
