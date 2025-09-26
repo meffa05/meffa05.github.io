@@ -23,6 +23,16 @@ body{
    
 
 }
+
+#Welcome{
+    
+    text-align: center;
+    font-size: 2em;
+    margin:0px;
+    padding:10px;
+    font-weight: bold;
+   
+}
 .banner{
     width:100%;
     margin:0px;
