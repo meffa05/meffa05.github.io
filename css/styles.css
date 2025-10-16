@@ -6,6 +6,42 @@ body{
     padding:0px;
     background-color: rgb(240, 240, 240);
 }
+#carouselbody{
+    background-color: #CCF0FB;
+}
+#carouseldiv{
+    width:100%;
+    text-align: center;
+    margin:0px;
+}
+#carnav{
+    border-top: none;
+}
+
+#carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    gap: 10px;
+}
+
+#carousel img {
+    max-height: 300px;
+    aspect-ratio: auto 300 / 400;
+    border-radius: 10px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
 .wrapper{
     width:80%;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -148,4 +184,16 @@ li{
     margin-top:50px;
 
 }
+nav{
+    text-align: center;
+    border-top: 1px dashed #008ac1;
+
+}
+nav a{
+    border: 3px solid #008ac1;
+    border-radius: 5px;
+    padding: 5px;
+    background-color:#70c6e2ff;
+}
+
 
