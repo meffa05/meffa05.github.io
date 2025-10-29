@@ -81,6 +81,35 @@ prev.addEventListener('click', ()=>{
 })
 
 
+//Assignment 7
+const PokeDiv = document.querySelector('#pokemon-ctr')
+
+;(async () => {
+
+//get random pokemon function
+const getRandomPokemon = async () => {
+    const url = 'https://pokeapi.co/api/v2/pokemon/' + Math.floor(Math.random() * 150)
+    const result = await fetch(url)
+    const Pokemon = await result.json()
+    //const {name, front_default } = Pokemon.sprites
+    return Pokemon
+}
+console.log (await getRandomPokemon())
+
+//render function
+
+const renderPokemon = async ({name, front_default}) => {
+    const img = document.createElement('img')
+    img.src = front_default// url of the image from the 'front_default' property
+    img.alt =name // name of the pokemon
+    parentElement.append(img)
+}
+
+
+
+})();
+
+
 
 
 
