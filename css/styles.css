@@ -62,8 +62,6 @@ body{
 #pokemon-ctr{
     text-align: center;
     margin-top:20px;
-    border-top:1px dashed;
-    background-color: red;
 }
 #SecretKey{
     clear: both;

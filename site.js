@@ -79,31 +79,32 @@ prev.addEventListener('click', ()=>{
     
     showImages(currentImage--)
 })
+console.log('testing to see if this prints to the console');
 
 
 //Assignment 7
-const PokeDiv = document.querySelector('#pokemon-ctr')
 
 ;(async () => {
 
 //get random pokemon function
-const getRandomPokemon = async () => {
-    const url = 'https://pokeapi.co/api/v2/pokemon/' + Math.floor(Math.random() * 150)
-    const result = await fetch(url)
-    const Pokemon = await result.json()
-    //const {name, front_default } = Pokemon.sprites
-    return Pokemon
-}
-console.log (await getRandomPokemon())
+    const getRandomPokemon = async () => {
+        const result = await fetch(url)
+        const url = 'https://pokeapi.co/api/v2/pokemon/' + Math.floor(Math.random() * 150)
+        const Pokemon = await result.json()
+        const {front_default } = Pokemon.sprites.front_default
+        return {front_default}
+    }
+    console.log(await getRandomPokemon())
 
-//render function
+    const renderPokemon = async ({front_default}) => {
+        const pokemonDiv = document.querySelector('#pokemon-ctr')
+        pokemonDiv.innerHTML=''
+        const pokemonImg= document.createElement('img')
+        pokemonImg.src = front_default
+        pokemonDiv.append(pokemonDiv)
 
-const renderPokemon = async ({name, front_default}) => {
-    const img = document.createElement('img')
-    img.src = front_default// url of the image from the 'front_default' property
-    img.alt =name // name of the pokemon
-    parentElement.append(img)
-}
+
+    }
 
 
 
