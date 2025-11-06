@@ -63,6 +63,9 @@ body{
     text-align: center;
     margin-top:20px;
 }
+.navs{
+    padding:10px;
+}
 #SecretKey{
     clear: both;
     text-align: center;
